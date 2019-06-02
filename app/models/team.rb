@@ -2,8 +2,9 @@ class Team
   attr_reader :name, :motto
   TEAMS = []
 
-  def initialize params
-    @name, @motto = params[:name], params[:motto]
+  def initialize(params)
+    @name = params[:name]
+    @motto = params[:motto]
     TEAMS << self
   end
 
